@@ -1,0 +1,6 @@
+material,parameter,value,unit,notes
+PTFE,relative_permittivity,,-,
+PTFE,loss_tangent,,-,
+PTFE,thickness,,mm,
+copper,conductivity,,S/m,
+copper,thickness,,um,

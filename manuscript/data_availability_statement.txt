@@ -1,0 +1,1 @@
+This repository contains the simulation parameters, geometry descriptions, numerical result files, and figure data supporting the manuscript "Spline-Optimized PBG-Enhanced PTFE Patch Antenna for the 0.35 THz Atmospheric Window." The study is simulation-based and uses CST Microwave Studio and ANSYS HFSS. No human-subject or experimental data are included.

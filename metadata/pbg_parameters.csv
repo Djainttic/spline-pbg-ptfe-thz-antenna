@@ -1,0 +1,9 @@
+parameter,symbol,value,unit,description
+lattice_constant,a,,mm,PBG lattice constant
+hole_radius,r,,mm,PBG hole radius
+number_of_cells_x,Nx,,-,Number of PBG cells along x
+number_of_cells_y,Ny,,-,Number of PBG cells along y
+sweep_parameter,,,,
+sweep_min,,,,
+sweep_max,,,,
+sweep_step,,,,

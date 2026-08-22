@@ -1,0 +1,9 @@
+This repository uses a split licensing scheme:
+
+- Code and scripts (scripts/ directory): MIT License.
+  See LICENSE-CODE-MIT.txt
+
+- Data, geometry descriptions, metadata, simulation results, and figure data
+  (metadata/, simulation_results/, figure_data/ directories): Creative Commons
+  Attribution 4.0 International (CC BY 4.0).
+  See LICENSE-DATA-CC-BY-4.0.txt

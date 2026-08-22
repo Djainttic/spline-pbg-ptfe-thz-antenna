@@ -1,0 +1,8 @@
+parameter,symbol,value,unit,description
+patch_length,L,,mm,Patch length
+patch_width,W,,mm,Patch width
+substrate_thickness,h,,mm,Substrate thickness
+ground_plane_length,Lg,,mm,Ground plane length
+ground_plane_width,Wg,,mm,Ground plane width
+feed_line_width,Wf,,mm,Feed line width
+feed_line_length,Lf,,mm,Feed line length
