@@ -1,52 +1,49 @@
-# spline-pbg-ptfe-thz-antenna
+# Spline–PBG–PTFE THz Antenna
 
-## Manuscript
-**Title:** Spline-Optimized PBG-Enhanced PTFE Patch Antenna for the 0.35 THz Atmospheric Window
-**Authors:** [Author Name(s) - INSERT]
-**Target journal:** Radio Science (AGU)
+This research repository contains the shareable data, figure assets, metadata, scripts, manuscript sources, and journal-specific submission versions for the THz spline-optimized antenna study.
 
-## Description
-This repository contains the simulation parameters, geometry descriptions, numerical result files, and figure data supporting the manuscript "Spline-Optimized PBG-Enhanced PTFE Patch Antenna for the 0.35 THz Atmospheric Window." The study is simulation-based and uses CST Microwave Studio and ANSYS HFSS. No human-subject or experimental data are included.
+## Source-of-truth policy
 
-## Software Versions
-- CST Microwave Studio: [VERSION - INSERT, e.g., 2024/2026]
-- ANSYS HFSS: [VERSION - INSERT]
+The scientific baseline is stored in `manuscripts/master/`. Scientific values, methods, citations, and conclusions must be corrected there first. Journal-specific derivatives are stored under `manuscripts/journals/` and may adapt the document class, metadata, declarations, table placement, figure paths, and citation style without silently changing the scientific content.
 
-## Solver Settings
-- Frequency range: [INSERT, e.g., 0.30-0.40 THz]
-- Mesh type / cells: [INSERT]
-- Boundary conditions: [INSERT]
-- Excitation: [INSERT, e.g., waveguide port]
+The repository is organized so that Manus can inspect, audit, and prepare changes through a branch and Pull Request. No correction should be applied independently to only one journal version unless it is genuinely journal-specific.
 
-## Repository Structure
-```
-README.md                          This file
-LICENSE                            Overview of split licensing (code vs. data)
-LICENSE-CODE-MIT.txt               MIT License (applies to scripts/)
-LICENSE-DATA-CC-BY-4.0.txt         CC BY 4.0 License (applies to metadata/, simulation_results/, figure_data/)
-metadata/
-  antenna_dimensions.csv           Patch, substrate, ground plane, and feed dimensions
-  material_parameters.csv          PTFE and copper material properties
-  pbg_parameters.csv               PBG lattice geometry and sweep settings
-simulation_results/
-  CST/                             CST Microwave Studio result exports
-  HFSS/                            ANSYS HFSS result exports
-figure_data/
-  s11_baseline.csv                 S11 vs. frequency, baseline (no PBG) design
-  s11_pbg.csv                      S11 vs. frequency, PBG-enhanced design
-  gain_efficiency.csv              Gain and radiation/total efficiency vs. frequency
-  radiation_patterns.csv           E-plane and H-plane radiation pattern data
-scripts/
-  README.md                        Description of optimization/post-processing scripts
-manuscript/
-  data_availability_statement.txt  Data availability statement used in the manuscript
+## Repository structure
+
+```text
+manuscripts/
+  master/                         Common scientific baseline
+  assets/figures/                Curated names used by LaTeX sources
+  journals/
+    frequenz/                     De Gruyter Frequenz version
+    aeu/                          Elsevier AEÜ version
+    radio-science/                AGU Radio Science version
+    motl/                         Wiley MOTL placeholder/version
+metadata/                         Antenna, material, and PBG parameters
+figure_data/                      Numerical data and original figure exports
+simulation_results/               Documentation for CST/HFSS result storage
+scripts/                          Reproducibility and post-processing scripts
+reports/                          Journal conversion and guideline reports
+audits/                           Visual, reference, and submission audits
+CHANGELOG.md                      Human-readable change history
+REPOSITORY_WORKFLOW.md            Detailed GitHub and Overleaf procedure
 ```
 
-## Notes
-- Only non-proprietary, shareable files are included. Proprietary CST/HFSS project
-  files are excluded where institutional or software licensing restricts redistribution.
-- No passwords, API keys, or confidential institutional data are included.
+## Overleaf workflow
 
-## Citation
-If you use this repository, please cite the manuscript (citation details to be added
-upon publication) and the archived Zenodo release (DOI to be added after release).
+Use one Overleaf project per journal. Keep the master scientific version separate from Frequenz, AEÜ, Radio Science, and MOTL. Overleaf is used for collaborative writing, comments, Track Changes, and PDF compilation; GitHub is used for the durable history, review, and archival submission states.
+
+Before synchronizing, finish or export active Track Changes and comments. Pull before pushing, compile after every substantial change, and archive each submitted state with a descriptive Git tag or release, such as `frequenz-submission-v1.0`.
+
+## Scientific and data policy
+
+Only shareable files are included. Proprietary CST/HFSS project files remain excluded where licensing or institutional restrictions apply. No passwords, API keys, or confidential institutional files belong in this repository.
+
+The data and code licenses are intentionally separated:
+
+- `LICENSE-CODE-MIT.txt` applies to reusable scripts.
+- `LICENSE-DATA-CC-BY-4.0.txt` applies to shareable metadata, figure data, and simulation-result exports where permitted.
+
+## Validation before submission
+
+Before any submission, verify the author metadata, affiliations, postal address, ORCID identifiers, bibliography and DOI records, figure resolution, journal declarations, data-availability statement, AI disclosure, and the exact PDF generated from the submitted source.
